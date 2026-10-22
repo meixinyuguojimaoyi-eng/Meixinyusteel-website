@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#10243e">
-<meta name="description" content="Meixinyu International Trade Co., Ltd. ຈຳໜ່າຍກໍ້ອາລູຊິ້ງ ແລະ ວັດສະດຸກໍ່ສ້າງ.">
-<title>Meixinyu Steel | ເຫຼັກ ແລະ ອາລູຊິ້ງ</title>
+<meta name="description" content="Meixinyu International Trade Co., Ltd. ຈຳໜ່າຍມ້ວນເຫຼັກສີ, ມ້ວນອາລູຊິ້ງ ແລະ ວັດສະດຸເຫຼັກ.">
+<title>MEIXINYU STEEL | ເຫຼັກ ແລະ ອາລູຊິ້ງ</title>
+
 <style>
 :root {
   --navy: #10243e;
@@ -375,7 +376,7 @@ section { scroll-margin-top: 125px; }
 .contact-section .section-title p { color: #cbd7e6; }
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   gap: 18px;
 }
 .contact-card {
@@ -393,6 +394,12 @@ section { scroll-margin-top: 125px; }
 .wechat-id {
   overflow-wrap: anywhere;
   color: var(--gold);
+}
+.social-row{
+  grid-column: 1 / -1;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
 }
 footer {
   background: #0a192c;
@@ -426,18 +433,21 @@ footer strong {
   .product-info h3 { font-size: 15px; }
   .why-grid { grid-template-columns: 1fr; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .social-row{grid-column:auto;}
   .stats-grid { gap: 5px; }
   .stat strong { font-size: 13px; }
   .stat span { font-size: 11px; }
 }
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="container header-inner">
     <a class="brand" href="#home">
       MEIXINYU STEEL
-      <small>Meixinyu International Trade Co., Ltd.</small>
+      <small>Meixinyu International Trade Co.,Ltd.</small>
     </a>
     <div class="languages" aria-label="Choose language">
       <button class="lang-btn active" data-lang="lo" onclick="setLanguage('lo')">ລາວ</button>
@@ -445,24 +455,24 @@ footer strong {
     </div>
   </div>
 </header>
+
 <nav>
   <div class="container nav-inner">
     <a href="#home" data-i18n="navHome">ໜ້າຫຼັກ</a>
     <a href="#products" data-i18n="navProducts">ສິນຄ້າ</a>
-    <a href="#why" data-i18n="navWhy">ຈຸດເດັ່ນ</a>
     <a href="#about" data-i18n="navAbout">ກ່ຽວກັບເຮົາ</a>
     <a href="#contact" data-i18n="navContact">ຕິດຕໍ່</a>
   </div>
 </nav>
+
 <main>
 <section class="hero" id="home">
   <div class="container hero-grid">
     <div>
       <div class="eyebrow" data-i18n="eyebrow">YOUR STEEL SUPPLY PARTNER</div>
-      <h1 data-i18n="heroTitle">ຜູ້ຈຳໜ່າຍສິນຄ້າທີ່ທ່ານໄວ້ໃຈໄດ້</h1>
+      <h1 data-i18n="heroTitle">ຄິດຫາອາລູຊິ້ງ ຄິດຫາພວກເຮົາບໍລິສັດເມີຍຊິນຢູ</h1>
       <p data-i18n="heroDesc">
-        ຈຳໜ່າຍກໍ້ອາລູຊິ້ງ,ເຫຼັກຮູບປະພັນ,ແຜ່ນອາລູຊິ້ງແລະວັດສະດຸກໍ່ສ້າງຕ່າງໆ
-        ສຳລັບຮ້ານຢຽບອາລູຊິ້ງແລະ ໂຮງງານ.
+ຈັດຫາກໍ້ອາລູຊິ້ງແລະເຫຼັກຮູບປະພັນຕ່າງໆສຳຫຼັບຮ້ານຢຽບອາລູຊິ້ງແລະໂຮງງານ
       </p>
       <div class="actions">
         <a class="btn btn-gold" href="#contact" data-i18n="heroBtn">ສອບຖາມລາຄາ</a>
@@ -471,45 +481,44 @@ footer strong {
     </div>
     <div class="hero-art" aria-label="Steel coil illustration">
       <div class="coil"></div>
-      <div class="art-label" data-i18n="artLabel">ກໍ້ອາລູຊິ້ງ,ເຫຼັກຮູບປະພັນແລະສິນຄ້າຕ່າງໆ</div>
+      <div class="art-label" data-i18n="artLabel">MEIXINYU STEEL</div>
     </div>
   </div>
 </section>
+
 <div class="stats">
   <div class="container stats-grid">
     <div class="stat">
-      <strong data-i18n="stat1">ສິນຄ້າຫຼາກຫຼາຍປະເພດ</strong>
-      <span data-i18n="stat1Sub">ຄົບຈົບໃນບ່ອນດຽວ</span>
+      <strong data-i18n="stat1">ສິນຄ້າຫຼາກຫຼາຍ ຄົບຈົບໃນບ່ອນດຽວ</strong>
     </div>
     <div class="stat">
-      <strong data-i18n="stat2">ພ້ອມໃຫ້ບໍລິການລູກຄ້າ</strong>
-      <span data-i18n="stat2Sub">ເຈົ້າຂອງຮ້ານຈຳໜ່າຍອາລູຊິ້ງແລະໂຮງງານ</span>
+      <strong data-i18n="stat2">ລາຄາຄຸ້ມຄ່າ ຄຸນນະພາບດີ</strong>
     </div>
     <div class="stat">
-      <strong data-i18n="stat3">ປຶກສາກ່ອນສັ່ງຊື້</strong>
-      <span data-i18n="stat3Sub">ສອບຖາມລາຍລະອຽດໄດ້</span>
+      <strong data-i18n="stat3">ຈັດສົ່ງທົ່ວປະເທດ</strong>
     </div>
   </div>
 </div>
+
 <section class="section" id="products">
   <div class="container">
     <div class="section-title">
-      <h2 data-i18n="productsTitle">ສິນຄ້າຂອງພວກເຮົາ</h2>
-      <p data-i18n="productsDesc">ວັດສະດຸເຫຼັກສຳລັບວຽກກໍ່ສ້າງ ແລະ ການຜະລິດ</p>
+      <h2 data-i18n="productsTitle">ສິນຄ້າພວກເຮົາ</h2>
+      <p data-i18n="productsDesc">ວັດສະດຸເຫຼັກສຳຫຼັບວຽກກໍ່ສ້າງແລະການຜະລິດ</p>
     </div>
     <div class="products">
       <article class="product-card">
         <div class="product-visual"><div class="mini-coil color"></div></div>
         <div class="product-info">
-          <h3 data-i18n="p1Title">ກໍ້ອາລູຊິ້ງສີ</h3>
-          <p data-i18n="p1Desc">ສຳລັບຜະລິດແຜ່ນຫຼັງຄາ ແລະ ວຽກອື່ນໆ</p>
+          <h3 data-i18n="p1Title">ກໍ້ອາລູຊິ້ງ</h3>
+          <p data-i18n="p1Desc">ສຳຫຼັບວຽກຜະລິດແຜ່ນຫຼັງຄາແລະວຽກອື່ນໆ</p>
           <a class="text-link" href="#contact" data-i18n="askPrice">ສອບຖາມລາຄາ →</a>
         </div>
       </article>
       <article class="product-card">
         <div class="product-visual"><div class="mini-coil aluzinc"></div></div>
         <div class="product-info">
-          <h3 data-i18n="p2Title">ກໍ້ອາລູຊິ້ງ</h3>
+          <h3 data-i18n="p2Title">ແຜ່ນອາລູຊິ້ງ</h3>
           <p data-i18n="p2Desc">ວັດສະດຸສຳລັບງານມຸງຫຼັງຄາ</p>
           <a class="text-link" href="#contact" data-i18n="askPrice">ສອບຖາມລາຄາ →</a>
         </div>
@@ -533,233 +542,214 @@ footer strong {
     </div>
   </div>
 </section>
+
 <section class="section why" id="why">
   <div class="container">
     <div class="section-title">
-      <h2 data-i18n="whyTitle">ເປັນຫຍັງຄວນຕິດຕໍ່ພວກເຮົາ?</h2>
+      <h2 data-i18n="whyTitle">ເປັນຫຍັງຈຶ່ງເລືອກພວກເຮົາ?</h2>
       <p data-i18n="whyDesc">ເລີ່ມຈາກການສອບຖາມ ເພື່ອເລືອກສິນຄ້າໃຫ້ເໝາະກັບທ່ານ</p>
     </div>
     <div class="why-grid">
       <article class="why-card">
-        <div class="why-icon">📦</div>
-        <h3 data-i18n="w1Title">ມີຫຼາຍປະເພດ</h3>
-        <p data-i18n="w1Desc">ສອບຖາມປະເພດ ສີ ຄວາມໜາ ແລະ ຂະໜາດທີ່ຕ້ອງການ.</p>
+        <div class="why-icon">🤝</div>
+        <h3 data-i18n="w1Title">ບໍລິການທີ່ດີ</h3>
+        <p data-i18n="w1Desc">ມີບໍລິການກ່ອນຂາຍແລະຫຼັງຂາຍພ້ອມໃຫ້ຄຳປຶກສາແກ່ລູກຄ້າທຸກທ່ານ.</p>
       </article>
       <article class="why-card">
-        <div class="why-icon">🤝</div>
-        <h3 data-i18n="w2Title">ບໍລິການສຳລັບທຸລະກິດ</h3>
-        <p data-i18n="w2Desc">ຕິດຕໍ່ສອບຖາມສຳລັບຮ້ານຮີດແຜ່ນ ແລະ ໂຮງງານ.</p>
+        <div class="why-icon">📦</div>
+        <h3 data-i18n="w2Title">ມີຫຼາຍປະເພດ</h3>
+        <p data-i18n="w2Desc">ມີສິນຄ້າຫຼາຍປະເພດ ສີ ຄວາມໜາ ແລະ ຂະໜາດທີ່ຕ້ອງການ.</p>
       </article>
       <article class="why-card">
         <div class="why-icon">🚚</div>
-        <h3 data-i18n="w3Title">ສອບຖາມການຈັດສົ່ງ</h3>
-        <p data-i18n="w3Desc">ສົ່ງຂໍ້ມູນປາຍທາງໃຫ້ພວກເຮົາ ເພື່ອສອບຖາມຄ່າຂົນສົ່ງ.</p>
+        <h3 data-i18n="w3Title">ສອບຖາມກ່ອນຈັດສົ່ງ</h3>
+        <p data-i18n="w3Desc">ສົ່ງຂໍ້ມູນປາຍທາງໃຫ້ພວກເຮົາເພື່ອສອບຖາມຄ່າຂົນສົ່ງ.</p>
       </article>
     </div>
   </div>
 </section>
+
 <section class="section" id="about">
   <div class="container about-grid">
     <div class="about-box">
-      <h2 data-i18n="aboutTitle">ກ່ຽວກັບ Meixinyu</h2>
+      <h2 data-i18n="aboutTitle">ກ່ຽວກັບMEIXINYU</h2>
       <p data-i18n="aboutDesc">
-        Meixinyu International Trade Co., Ltd.
-        ຄິດຫາອາລູຊິ້ງຄິດຫາບໍລິສັດເມີຍຊິນຢູຂອງພວກເຮົາ.
-        ພວກເຮົາຍິນດີໃຫ້ບໍລິການຕາມຄວາມຕ້ອງການ
-        ແລະ ຊ່ວຍສອບຖາມລາຍລະອຽດສິນຄ້າ.
+        Meixinyu International Trade Co., Ltd. ຈັດຫາວັດສະດຸກໍ່ສ້າງ ມ້ວນອາລູຊິ້ງ ແລະ ເຫຼັກຮູບປະພັນຕ່າງໆ. ພວກເຮົາຍິນດີໃຫ້ບໍລິການແລະພ້ອມໃຫ້ຄຳປຶກສາລາຍລະອຽດກ່ຽວກັບສິນຄ້າ.
       </p>
       <a class="btn btn-gold" href="#contact" data-i18n="aboutBtn">ຕິດຕໍ່ພວກເຮົາ</a>
     </div>
     <div class="about-banner">
       <strong>MEIXINYU STEEL</strong>
-      <span data-i18n="aboutBanner">ຮ່ວມມືກັນເພື່ອທຸລະກິດຂອງທ່ານ</span>
+      <span data-i18n="aboutBanner">ຮ່ວມມືກັນເພື່ອພັດທະນາໃຫ້ໄດ້ຄຸນນະພາບທີ່ດີ</span>
     </div>
   </div>
 </section>
+
 <section class="section contact-section" id="contact">
   <div class="container">
     <div class="section-title">
-      <h2 data-i18n="contactTitle">ຕິດຕໍ່ສອບຖາມ</h2>
-      <p data-i18n="contactDesc">ສົນໃຈສິນຄ້າ? ຕິດຕໍ່ຫາພວກເຮົາເພື່ອສອບຖາມລາຄາ</p>
+      <h2 data-i18n="contactTitle">ຕິດຕໍ່ພວກເຮົາ</h2>
+      <p data-i18n="contactDesc">ຕິດຕໍ່ພວກເຮົາເພື່ອສອບຖາມລາຄາ</p>
     </div>
     <div class="contact-grid">
       <div class="contact-card">
         <h3>WhatsApp</h3>
-        <p data-i18n="waDesc">ສົ່ງຂໍ້ຄວາມສອບຖາມສິນຄ້າ ແລະ ລາຄາຜ່ານ WhatsApp.</p>
-        <a class="btn btn-gold" id="waLink"
-           href="https://wa.me/"
-           target="_blank" rel="noopener"
-           data-i18n="waBtn">ຕິດຕໍ່ WhatsApp</a>
+        <p>+8562092926633<br>+8562096677759</p>
+        <a class="btn btn-gold" id="waLink1"
+           href="https://wa.me/8562092926633"
+           target="_blank" rel="noopener">ສົ່ງຂໍ້ຄວາມ WhatsApp 1</a>
+        <a class="btn btn-gold" id="waLink2" style="margin-left:8px"
+           href="https://wa.me/8562096677759"
+           target="_blank" rel="noopener">ສົ່ງຂໍ້ຄວາມ WhatsApp 2</a>
       </div>
       <div class="contact-card">
         <h3>WeChat 微信</h3>
-        <p data-i18n="wechatDesc">WeChat ID: Meixinyu9688</p>
-        <p class="wechat-id" id="wechatDisplay">Meixinyu9688</p>
-        <button class="btn btn-gold" onclick="copyWechat()"
-                data-i18n="wechatBtn">ຄັດລອກ WeChat ID</button>
+        <p>WeChat ID: <span class="wechat-id" id="wechatDisplay">meixinyu9688</span></p>
+        <button class="btn btn-gold" onclick="copyWechat()">ຄັດລອກ WeChat ID</button>
         <p id="copyMessage" aria-live="polite"></p>
+      </div>
+      <div class="contact-card social-row">
+        <div>
+          <h3>TikTok</h3>
+          <p>MeixinyuSteel_official</p>
+        </div>
+        <div>
+          <h3>Facebook</h3>
+          <p>ບໍລິສັດເມີຍຊິນຢູການຄ້າສາກົນຈຳກັດຜູ້ດຽວ</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 </main>
+
 <footer>
-  <strong>Meixinyu International Trade Co., Ltd.</strong>
+  <strong>Meixinyu International Trade Co., Ltd.
+ສະຖານທີາບ້ານນາລ້ອມ ເມືອງໄຊທານີ ແຂວງນະຄອນຫຼວງວຽງຈັນ</strong>
   <span data-i18n="footerText">ຂອບໃຈທີ່ໃຫ້ຄວາມໄວ້ວາງໃຈ</span>
-  <div>© <span id="year"></span> Meixinyu Steel. All rights reserved.</div>
+  <div>© <span id="year"></span> MEIXINYU STEEL. All rights reserved.</div>
 </footer>
+
 <script>
-/* ===== CONTACT SETTINGS =====
-   WhatsApp numbers use country code and digits only.
-*/
-const WHATSAPP_NUMBERS = [
-  "8562092926633",
-  "8562096677759"
-];
-const WECHAT_ID = "Meixinyu9688";
+const WHATSAPP_NUMBER = "8562092926633";
+const WECHAT_ID = "meixinyu9688";
+
 const translations = {
   lo: {
-    pageTitle: "Meixinyu Steel | ເຫຼັກ ແລະ ອາລູຊິ້ງ",
+    pageTitle: "MEIXINYU STEEL | ເຫຼັກ ແລະ ອາລູຊິ້ງ",
     navHome: "ໜ້າຫຼັກ",
     navProducts: "ສິນຄ້າ",
-    navWhy: "ຈຸດເດັ່ນ",
     navAbout: "ກ່ຽວກັບເຮົາ",
     navContact: "ຕິດຕໍ່",
     eyebrow: "YOUR STEEL SUPPLY PARTNER",
-    heroTitle: "ຄິດຫາອາລູຊິ້ງ ຄິດຫາບໍລິສັດ ເມີຍຊິນຢູ ຂອງພວກເຮົາ",
-    heroDesc: "ຈັດຫາມ້ວນເຫຼັກສີ ແລະ ອາລູຊິ້ງ ສຳລັບຮ້ານຮີດແຜ່ນຫຼັງຄາ ແລະ ໂຮງງານ.",
+    heroTitle: "ຄິດຫາອາລູຊິ້ງ ຄິດຫາພວກເຮົາບໍລິສັດເມີຍຊິນຢູ",
+    heroDesc: "ຈັດຫາກໍ້ອາລູຊິ້ງແລະເຫຼັກຮູບປະພັນຕ່າງໆສຳຫຼັບຮ້ານຢຽບອາລູຊິ້ງແລະໂຮງງານ",
     heroBtn: "ສອບຖາມລາຄາ",
     heroMore: "ເບິ່ງສິນຄ້າ",
-    artLabel: "ສິນຄ້າເຫຼັກ ສຳລັບທຸລະກິດຂອງທ່ານ",
-    stat1: "ຫຼາຍປະເພດສິນຄ້າ",
-    stat1Sub: "ເລືອກໄດ້ຕາມຄວາມຕ້ອງການ",
-    stat2: "ຮອງຮັບລູກຄ້າທຸລະກິດ",
-    stat2Sub: "ຮ້ານຮີດແຜ່ນ ແລະ ໂຮງງານ",
-    stat3: "ປຶກສາກ່ອນສັ່ງຊື້",
-    stat3Sub: "ສອບຖາມລາຍລະອຽດໄດ້",
-    productsTitle: "ສິນຄ້າຂອງພວກເຮົາ",
-    productsDesc: "ວັດສະດຸເຫຼັກສຳລັບວຽກກໍ່ສ້າງ ແລະ ການຜະລິດ",
-    p1Title: "ເຫຼັກສີ",
-    p1Desc: "ສຳລັບຜະລິດແຜ່ນຫຼັງຄາ ແລະ ວຽກອື່ນໆ",
-    p2Title: "ກໍ້ອາລູຊິ້ງ",
+    artLabel: "MEIXINYU STEEL",
+    stat1: "ສິນຄ້າຫຼາກຫຼາຍ ຄົບຈົບໃນບ່ອນດຽວ",
+    stat2: "ລາຄາຄຸ້ມຄ່າ ຄຸນນະພາບດີ",
+    stat3: "ຈັດສົ່ງທົ່ວປະເທດ",
+    productsTitle: "ສິນຄ້າພວກເຮົາ",
+    productsDesc: "ວັດສະດຸເຫຼັກສຳຫຼັບວຽກກໍ່ສ້າງແລະການຜະລິດ",
+    p1Title: "ກໍ້ອາລູຊິ້ງ",
+    p1Desc: "ສຳຫຼັບວຽກຜະລິດແຜ່ນຫຼັງຄາແລະວຽກອື່ນໆ",
+    p2Title: "ແຜ່ນອາລູຊິ້ງ",
     p2Desc: "ວັດສະດຸສຳລັບງານມຸງຫຼັງຄາ",
-    p3Title: "ມ້ວນເຫຼັກ",
+    p3Title: "ເຫຼັກຮູບປະພັນ",
     p3Desc: "ສອບຖາມປະເພດ ແລະ ຂະໜາດ",
     p4Title: "ແຜ່ນອາລູຊິ້ງ",
     p4Desc: "ສຳລັບວຽກກໍ່ສ້າງ ແລະ ມຸງຫຼັງຄາ",
     askPrice: "ສອບຖາມລາຄາ →",
-    whyTitle: "ເປັນຫຍັງຄວນຕິດຕໍ່ພວກເຮົາ?",
+    whyTitle: "ເປັນຫຍັງຈຶ່ງເລືອກພວກເຮົາ?",
     whyDesc: "ເລີ່ມຈາກການສອບຖາມ ເພື່ອເລືອກສິນຄ້າໃຫ້ເໝາະກັບທ່ານ",
-    w1Title: "ມີຫຼາຍປະເພດ",
-    w1Desc: "ສອບຖາມປະເພດ ສີ ຄວາມໜາ ແລະ ຂະໜາດທີ່ຕ້ອງການ.",
-    w2Title: "ບໍລິການສຳລັບທຸລະກິດ",
-    w2Desc: "ຕິດຕໍ່ສອບຖາມສຳລັບຮ້ານຮີດແຜ່ນ ແລະ ໂຮງງານ.",
-    w3Title: "ສອບຖາມການຈັດສົ່ງ",
-    w3Desc: "ສົ່ງຂໍ້ມູນປາຍທາງໃຫ້ພວກເຮົາ ເພື່ອສອບຖາມຄ່າຂົນສົ່ງ.",
-    aboutTitle: "ກ່ຽວກັບ Meixinyu",
-    aboutDesc: "Meixinyu International Trade Co., Ltd. ຈັດຫາວັດສະດຸກໍ່ສ້າງກໍ້ອາລູຊິ້ງ ແລະ ເຫຼັກຮູບປະພັນຕ່າງໆ. ພວກເຮົາຍິນດີໃຫ້ບໍລິການ ແລະ ຊ່ວຍສອບຖາມລາຍລະອຽດສິນຄ້າ.",
+    w1Title: "ບໍລິການທີ່ດີ",
+    w1Desc: "ມີບໍລິການກ່ອນຂາຍແລະຫຼັງຂາຍພ້ອມໃຫ້ຄຳປຶກສາແກ່ລູກຄ້າທຸກທ່ານ.",
+    w2Title: "ມີຫຼາຍປະເພດ",
+    w2Desc: "ມີສິນຄ້າຫຼາຍປະເພດ ສີ ຄວາມໜາ ແລະ ຂະໜາດທີ່ຕ້ອງການ.",
+    w3Title: "ສອບຖາມກ່ອນຈັດສົ່ງ",
+    w3Desc: "ສົ່ງຂໍ້ມູນປາຍທາງໃຫ້ພວກເຮົາເພື່ອສອບຖາມຄ່າຂົນສົ່ງ.",
+    aboutTitle: "ກ່ຽວກັບMEIXINYU",
+    aboutDesc: "Meixinyu International Trade Co., Ltd. ຈັດຫາວັດສະດຸກໍ່ສ້າງ ມ້ວນອາລູຊິ້ງ ແລະ ເຫຼັກຮູບປະພັນຕ່າງໆ. ພວກເຮົາຍິນດີໃຫ້ບໍລິການແລະພ້ອມໃຫ້ຄຳປຶກສາລາຍລະອຽດກ່ຽວກັບສິນຄ້າ.",
     aboutBtn: "ຕິດຕໍ່ພວກເຮົາ",
-    aboutBanner: "ຮ່ວມມືກັນເພື່ອທຸລະກິດຂອງທ່ານ",
-    contactTitle: "ຕິດຕໍ່ສອບຖາມ",
-    contactDesc: "ສົນໃຈສິນຄ້າ? ຕິດຕໍ່ຫາພວກເຮົາເພື່ອສອບຖາມລາຄາ",
-    waDesc: "ສົ່ງຂໍ້ຄວາມສອບຖາມສິນຄ້າ ແລະ ລາຄາຜ່ານ WhatsApp.",
-    waBtn: "ຕິດຕໍ່ WhatsApp",
-    wechatDesc: "WeChat ID: Meixinyu9688",
-    wechatBtn: "ຄັດລອກ WeChat ID",
+    aboutBanner: "ຮ່ວມມືກັນເພື່ອພັດທະນາໃຫ້ໄດ້ຄຸນນະພາບທີ່ດີ",
+    contactTitle: "ຕິດຕໍ່ພວກເຮົາ",
+    contactDesc: "ຕິດຕໍ່ພວກເຮົາເພື່ອສອບຖາມລາຄາ",
     footerText: "ຂອບໃຈທີ່ໃຫ້ຄວາມໄວ້ວາງໃຈ",
-    missingWechat: "ບໍ່ພົບ WeChat ID",
     copied: "ຄັດລອກແລ້ວ",
     copyFailed: "ກະລຸນາຄັດລອກ ID ດ້ວຍຕົນເອງ"
   },
   zh: {
-    pageTitle: "美欣宇钢铁 | 彩钢卷与铝锌材料",
+    pageTitle: "MEIXINYU STEEL | 美欣宇彩钢与镀铝锌钢材",
     navHome: "首页",
-    navProducts: "产品中心",
-    navWhy: "我们的优势",
+    navProducts: "产品",
     navAbout: "关于我们",
-    navContact: "联系我们",
+    navContact: "联系",
     eyebrow: "YOUR STEEL SUPPLY PARTNER",
-    heroTitle: "值得信赖的钢材供应合作伙伴",
-    heroDesc: "为屋面板加工商、工厂及建筑行业客户提供彩钢卷、铝锌卷等钢材产品。",
+    heroTitle: "想到彩钢卷，认准美欣宇",
+    heroDesc: "供应镀铝锌-彩钢卷以及各种型材，供压瓦门店和工厂使用",
     heroBtn: "询价咨询",
     heroMore: "查看产品",
-    artLabel: "为您的业务提供钢材产品",
-    stat1: "多种钢材产品",
-    stat1Sub: "按您的需求咨询选购",
-    stat2: "服务企业客户",
-    stat2Sub: "屋面板加工商及工厂",
-    stat3: "采购前咨询",
-    stat3Sub: "欢迎了解产品详情",
+    artLabel: "MEIXINYU STEEL",
+    stat1: "品类齐全，一站式采购",
+    stat2: "价格实惠 品质可靠",
+    stat3: "全国配送",
     productsTitle: "我们的产品",
     productsDesc: "适用于建筑工程及加工生产的钢材产品",
     p1Title: "彩钢卷",
-    p1Desc: "适用于屋面板生产及其他加工用途",
+    p1Desc: "适用于层面板生产及其它加工用途",
     p2Title: "铝锌卷",
     p2Desc: "适用于屋面及建筑相关用途",
-    p3Title: "钢卷",
+    p3Title: "钢材型材",
     p3Desc: "欢迎咨询产品类型及规格",
     p4Title: "铝锌板",
     p4Desc: "适用于建筑及屋面工程",
-    askPrice: "立即询价 →",
-    whyTitle: "为什么联系美欣宇？",
-    whyDesc: "欢迎咨询，为您的业务了解合适的产品",
-    w1Title: "多种产品选择",
-    w1Desc: "可咨询产品类型、颜色、厚度及所需规格。",
-    w2Title: "服务企业客户",
-    w2Desc: "面向屋面板加工商、工厂及相关企业客户。",
+    askPrice: "询价咨询 →",
+    whyTitle: "为什么要联系我们",
+    whyDesc: "欢迎询问，为您的业务了解合适的产品",
+    w1Title: "优质周到的服务",
+    w1Desc: "提供售前，售后服务，竭诚服务每一位客户",
+    w2Title: "多种产品选择",
+    w2Desc: "有许多产品类型，颜色，厚度及所需规格",
     w3Title: "了解运输安排",
-    w3Desc: "提供收货地点信息，以便咨询运输费用。",
+    w3Desc: "提供收货地点信息，以便咨询运输费用",
     aboutTitle: "关于美欣宇",
-    aboutDesc: "美欣宇国际贸易有限公司为企业客户提供钢材产品。我们重视客户需求，欢迎咨询产品规格及采购详情。",
+    aboutDesc: "美欣宇国际贸易有限公司，供应彩钢卷材建材及各类钢材型材。我们竭诚为您服务，随时解答产品相关详情。",
     aboutBtn: "联系我们",
-    aboutBanner: "携手合作，助力您的业务发展",
+    aboutBanner: "同心合作，共赢发展",
     contactTitle: "联系我们",
-    contactDesc: "需要了解产品或报价？欢迎联系我们",
-    waDesc: "通过 WhatsApp 咨询产品信息及价格。",
-    waBtn: "联系 WhatsApp",
-    wechatDesc: "微信号：Meixinyu9688",
-    wechatBtn: "复制微信号",
+    contactDesc: "需要了解产品或报价 欢迎联系我们",
     footerText: "感谢您的信任与支持",
-    missingWechat: "未找到微信号",
     copied: "已复制",
     copyFailed: "请手动复制微信号"
   }
 };
+
 function setLanguage(lang) {
   const dict = translations[lang] || translations.lo;
   document.documentElement.lang = lang;
+
   document.querySelectorAll("[data-i18n]").forEach(function(el) {
     const key = el.getAttribute("data-i18n");
     if (dict[key] !== undefined) el.textContent = dict[key];
   });
+
   document.querySelectorAll("[data-lang]").forEach(function(btn) {
     const active = btn.dataset.lang === lang;
     btn.classList.toggle("active", active);
     btn.setAttribute("aria-pressed", String(active));
   });
+
   document.title = dict.pageTitle;
-  document.getElementById("wechatDisplay").textContent = WECHAT_ID;
   document.getElementById("copyMessage").textContent = "";
-  updateWhatsAppLink();
 }
-function updateWhatsAppLink() {
-  const link = document.getElementById("waLink");
-  const number = WHATSAPP_NUMBERS[0];
-  if (/^\d{8,15}$/.test(number)) {
-    link.href = "https://wa.me/" + number;
-  } else {
-    link.href = "#contact";
-  }
-}
+
 function copyWechat() {
   const dict = translations[
     document.documentElement.lang === "zh" ? "zh" : "lo"
   ];
   const message = document.getElementById("copyMessage");
-  if (!WECHAT_ID) {
-    message.textContent = dict.missingWechat;
-    return;
-  }
+
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(WECHAT_ID).then(function() {
       message.textContent = dict.copied;
@@ -770,8 +760,10 @@ function copyWechat() {
     message.textContent = dict.copyFailed + ": " + WECHAT_ID;
   }
 }
+
 document.getElementById("year").textContent = new Date().getFullYear();
 setLanguage("lo");
 </script>
+
 </body>
 </html>
